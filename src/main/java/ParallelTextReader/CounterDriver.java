@@ -80,6 +80,7 @@ public class CounterDriver {
                 .sorted((e1, e2) -> e2.getValue().compareTo(e1.getValue()))
                 .limit(wordCount)
                 .forEach(entry -> System.out.println(entry.getKey() + ": " + entry.getValue()));
-        System.out.println("total time taken: ~" + (System.currentTimeMillis() - startTime)/1000 + "s");
+//        System.out.println("total time taken: ~" + (System.currentTimeMillis() - startTime)/1000 + "s");
+        System.out.println("total time taken: " + (System.currentTimeMillis() - startTime) + "ms");
     }
 }
