@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.concurrent.*;
 
 public class CounterDriver {
-    static final String directoryPath = "E:/intellij idea/LearnMulti/src/main/java/ParallelTextReader/TextFiles";
+    static final String directoryPath = "src/main/java/ParallelTextReader/TextFiles";
     static Map<String, Integer> wordCountMap = new ConcurrentHashMap<>();
 
     public static Map<String, Integer> countWordOccurrencesInDirectory(String directoryPath, String wordToCount, boolean parallel) {
